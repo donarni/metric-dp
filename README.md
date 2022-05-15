@@ -24,7 +24,7 @@ embedding = model.embeddings.word_embeddings.weight.cpu().detach().numpy()
 mdp = metricDP(vocabulary, embedding, start_from=999)
 mdp.build_ann(metric='euclidean', n_trees=50)
 ```
-To exclude special tokens from the candidate pool, specifiy the position of regular tokens. During the privatization step, the tokens are remaped from nearest neighbor to the embedding index. 
+To exclude special tokens from the candidate pool, specifiy the position of regular tokens via ```start_from```. In BERT, the first regular token is '!' at index 999. During the privatization step, the tokens are remaped from nearest neighbor to the embedding index. 
 
 4. Numeralize Input
 ```
