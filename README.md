@@ -1,6 +1,6 @@
 # Metric Differential Privacy for NLP
 
-Given a **Vocabulary** [Dictionary] and a lexical **Embedding** [Array], e.g., ```GloVe``` or ```BERT```, this repository provides a ```Class``` to perturb numeralized tokens. Approximate Nearest Neighbors are calculated using ```Annoy```. Calibrated Multivariate Perturbations are explained in ```Feyisetan et al. (2020)```.
+Given a **Vocabulary** [Dictionary] and a lexical **Embedding** [Array], e.g., ```GloVe``` or ```BERT```, this repository provides a ```Class``` to perturb numeralized tokens. Approximate Nearest Neighbors are calculated using ```Annoy```. Calibration of Multivariate Perturbations are explained in ```Feyisetan et al. (2020)```.
 
 ### Example
 
