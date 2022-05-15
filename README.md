@@ -37,7 +37,7 @@ ids = tokenizer.encode(text, truncation=True, padding='max_length', max_length=1
 mdp.privatize(ids, epsilon=1, special_tokens=[0,100,101,102,103])
 #[101, 2601, 2267, 25195, 20139, 6584, 16304, 22754, 102, 0]
 ```
-Perturbation ignores all tokens specified in ```special_tokens```, and ```epsilon``` regulates the privacy guarantees. A smaller epsilon leads to more perturbations and higher privacy guarantees. A higher epsilon leads to less perturbations and lower privacy guarantees.
+Perturbations ignore all tokens specified in ```special_tokens```, and ```epsilon``` regulates the privacy guarantees. A smaller epsilon leads to more perturbations and higher privacy guarantees. A higher epsilon leads to less perturbations and lower privacy guarantees.
 
 #### Citation
 
