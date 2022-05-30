@@ -54,6 +54,5 @@ class metricDP():
             if token not in special_tokens:
                 #token -= self.start_from
                 token = replace(token, epsilon)
-                token += self.start_from
-                tokens[index] = token
+                tokens[index] = token + self.start_from
         return tokens
