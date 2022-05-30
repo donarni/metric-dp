@@ -52,7 +52,7 @@ class metricDP():
         for index, token in enumerate(tokens):
             assert token <= self.vocab_size, 'OOV'
             if token not in special_tokens:
-                token -= self.start_from
+                #token -= self.start_from
                 token = replace(token, epsilon)
                 token += self.start_from
                 tokens[index] = token
